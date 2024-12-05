@@ -6,7 +6,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-      - uses: actions/hello-from-hexlet-action@release
+      - name: Hello from Hexlet
+        uses: hexlet-components/hello-from-hexlet-action@release
       - run: make setup
       - run: make test
       - run: make say-hello
